@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tutor UNEFA: Respuestas Instantáneas para Estudiantes </h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="generativo.html">Generativo</a></li> <!-- Nuevo botón -->
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Este es el inicio de la pagina web. ¡Espero que te guste! aqui encontraras todo el material necesario para tus consultas educativas</p>
+    </section>
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Hola, soy Samuel Gomez y mi equipo de trabajo. Nos encantaría que tengas esta herramienta para tus necesidades educativas.</p>
+    </section>
+
+    <section id="sobre-nosotros">
+        <h2>Chatbot educativos</h2>
+        <p>Tenemos dos chatbot.</p>
+        <p>El de base de conocimiento con un entrenamiento previo sobre material de la UNEFA, el cual está en la esquina derecha.</p>
+        <p>El generativo, encontrando contenido general sobre diferentes temas generales.</p>
+    </section>
+    
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+          w["botsonic_widget"] = o;
+          w[o] =
+            w[o] ||
+            function () {
+              (w[o].q = w[o].q || []).push(arguments);
+            };
+          (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+          js.id = o;
+          js.src = f;
+          js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+        Botsonic("init", {
+          serviceBaseUrl: "https://api-azure.botsonic.ai",
+          token: "def01a6e-2795-4b2c-bfbc-df00a7352d14",
+        });
+      </script>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web UNEFA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
